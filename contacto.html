@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="icon" href="assets_3/wii.png">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>Escribime...</h2>
-        <p>Gmail: lautaro.gahn@gmail.com</p>
-        <a href="index.html">Home</a>
+        <h2>Escribe un comentario.</h2>
+        <form action>
+            <fieldset>
+                <legend>Comentario</legend>
+                <label for="Nombre">Nombre</label>
+                 <br>
+                <input type="text" placeholder="Ingrese Nombre">
+                 <br>
+                <label for="Correo">Correo Electronico</label>
+                 <br>
+                <input type="text" placeholder="Ingrese Correo">
+                 <br>
+                <label for="Reseña">Reseña</label>
+                 <br>
+                <textarea cols="30" rows="5" placeholder="Escriba aqui..." ></textarea><br>
+            </fieldset>
+            <input type="Submit" value="Enviar" style="color: red;">
+                 <br>
+            <input type="submit" value="Limpiar" style="color: green;">
+                 <br>
+            <h4>Autor de la Guia: Lautaro Gahn</h4>
+        </form>
     </main>
     
 </body>
