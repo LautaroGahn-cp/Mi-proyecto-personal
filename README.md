@@ -9,7 +9,6 @@ Esta pagina se trata sobre una pequeña guia al momento de jugar el videojuego N
 - Contine formulario de contacto.
 - Contiene un Gameplay.
 - Contiene imagenes que estan almasenadas en diferentes assets.
-- Contiene siete paginas en total: contacto, extras, gameplay, index(menu principal), movimientos_y_controles, personajes, zonas_y_objetos.
 - Contiene logo en todas las paginas.
 - Contiene URL externas donde se puede corroborar la informacion.
 
