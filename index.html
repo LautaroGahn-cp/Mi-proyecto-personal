@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets_3/wii.png">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="cabeza">
+        <nav class="menu">
             <ul>
-                <li><a href="#Gameplay">Gameplay</a></li>
-                    <ul class="">
+                <li><a href="#Gameplay">Gameplay</a>
+                    <ul class="submenu_1">
                             <li><a href="#Desarrollo">Desarrollo del Gameplay</a></li>
                             <li><a href="#Divicion">Divicion de los mundos</a></li>
                     </ul>
+                </li>   
                 <li><a href="#Personajes">Personajes</a></li>
-                <li><a href="#Casas_y_objetos">Casas y Objetos</a></li>
-                    <ul class="">
+                <li><a href="#Casas_y_objetos">Casas y Objetos</a>
+                    <ul class="submenu_2">
                             <li><a href="#Casas">Casas</a></li>
                             <li><a href="#Objetos">Objetos</a></li>
                     </ul>
-                <li><a href="#Movimientos_y_controles">Movimientos y Controles</a></li>
-                    <ul class="">
+                </li>
+                <li><a href="#Movimientos_y_controles">Movimientos y Controles</a>
+                    <ul  class="submenu_3">
                             <li><a href="#Movimientos">Movimientos</a></li>
                             <li><a href="#Controles">Controles</a></li>
                     </ul>
+                </li>
                 <li><a href="#Extras">Extras</a></li>
                 <li><a href="contacto.html">Reseña</a></li>
             </ul>
@@ -34,13 +38,11 @@
         <h2>Esta es una pequeña Guia sobre el juego de Super Mario Bors para la Wii. 
             Este juego es el segundo de la sub-saga New Super Mario Bros y decimosegundo juego de la saga 2D de este famoso plataformero.
         </h2>
-        <img src="assets/Portada.jpg" width="1000" height="350">
+        <img src="assets/Portada.jpg" width="1475" height="450" class="img">
     </header>
-    
-     <br>
-
     <main>
-        <h2>Sobre el Videojuego:</h2>
+        <article class="introduccion">
+            <h2>Sobre el Videojuego:</h2>
         <ul>
             <li><h3>Plataforma: Nintendo Wii.</h3></li>
             <li><h3>Desarrollador: Nintendo EAD (Entertainment Analysis & Development).</h3></li>
@@ -51,15 +53,16 @@
          Como dato de color, este fue el primer juego que el crador de esta guia juego. 
         </aside>
         <br>
+        <h2>Video de ilustracion:</h2>
         <iframe width="1015" height="571" src="https://www.youtube.com/embed/5yOQVYyEFDs" title="New Super Mario Bros. Wii Worlds 1 - 9 Full Game (100%)" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br><br>
-
+        </article>
         <section id="Gameplay">
             <h2>Gameplay</h2>
             <article id="Desarrollo">
-                <h2>Desarrollo del gameplay</h2>
+                <h3>Desarrollo del gameplay</h3>
                 <p>Antes de comezar el juego se deben elegir la catidad de juagadores que participaran del mismo, puediendo participar de 1 a 4 jugadores. 
                     Aun asi este número de jugadores puede cambiar cuando te encuentres en el mapa de cualquier mundo entrando en el menú.
                 </p><br>
@@ -71,7 +74,7 @@
                     Al saltar a la meta final, te darán una puntuación que dependerá de la altura a la que te agarres al mástil, incluso podrás conseguir una vida extra si te agarras por encima del banderín.
                 </p><br>
                 <img src="assets/Gameplay 1.png" alt="Iamgen del Gameplay" width="600">  
-                <h4>Meta normal / Meta secundaria/atajo</h4><img src="assets/Meta Normal.png" alt="Iamgen de la llegada a la meta" width="600">
+                <h4>Meta normal / Meta secundaria o atajo</h4><img src="assets/Meta Normal.png" alt="Iamgen de la llegada a la meta" width="600">
                 <img src="assets/Meta Secundaria o Atajo.png" alt="Imagen de la llegada a la meta secundaria" width="600"> <br><br>
 
                 
@@ -96,7 +99,7 @@
                 <img src="assets/Mario y Yoshi.png" alt="Imagen de Mario y Yoshi" width="600">
             </article> 
             <article id="Divicion">
-                <h2>Divicion de los Mundos</h2>
+                <h3>Divicion de los Mundos</h3>
                 <caption>MUNDOS</caption>
                 <table border="1">
                     <tr>
@@ -220,15 +223,14 @@
             </article>
         </section>
         <br><br>
-        
         <section id="Personajes">
             <h2>Personajes</h2>
-            <article id="Personajes">
-                <h2>Personajes del videojuegos y poderes</h2>
-                <p>Los cuatro personajes que puedes manejar en el juego, pueden tener diferentes aspectos y 
+            <article>
+                <h3 class="T">Personajes del videojuegos y poderes</h3>
+                <h4>Los cuatro personajes que puedes manejar en el juego, pueden tener diferentes aspectos y 
                 habilidades dependiendo del objeto que cojas.
                 Los personajes que aparecen son Mario, Luigi, Toad Amarillo y Toad Azul.
-                </p>
+                </h4>
                 <ul>
                     <li>
                     <h3>Super</h3>
@@ -297,15 +299,14 @@
                 </ul>
             </article>
         </section>
-
         <section id="Casas_y_objetos">
             <h2>Casas y Objetos</h2>
             <article id="Casas">
-                <h2>Casas hongo</h2>
+                <h3 class="T">Casas hongo</h3>
                     <p>En el mapa de cada mundo, te encontrarás casas con el techo de diferentes colores
                         y en cada una de ellas podrás conseguir diferentes objetos.
                     </p>
-                <h3>Tipos de casas:</h3>
+                <h3 class="t">Tipos de casas:</h3>
                 <h4>Casa champiñon dorada</h4>
                 <img src="assets/Casa Champion Dorada.png" alt="Imagen casa champiñon dorada.">
                     <p>Dentro de esta casa te encontrarás a Toad junto a un cofre. Al tocar el cofre cogerás automáticamente el tesoro que haya dentro. 
@@ -350,7 +351,7 @@
                 <img src="assets/Final del minijuego verde.png" alt="Imagen del final del minijuego">
             </article>
             <article id="Objetos">
-                <h2>Objetos</h2>
+                <h3 class="T">Objetos</h3>
                 <ul>
                     <li>
                         <p> 
@@ -515,7 +516,7 @@
         <section id="Movimientos_y_controles">
             <h2>Movimientos y controles</h2>
             <article id="Movimientos">
-                <h2>Movimientos</h2>
+                <h3>Movimientos</h3>
                     <ul>
                         <li>
                             <p>
@@ -633,7 +634,8 @@
                     <ul>
             </article>  
             <article id="Controles">
-            <h2>Control Normal</h2>
+            <h2>Controles</h2>
+            <h3>Control Normal</h3>
                 <p>
                     Posicion correcta del mando antes de jugar. <br>
                     <img src="assets_3/Control de Wii.png" alt="Imagen del contol de Wii">
@@ -704,14 +706,14 @@
                     </tr>
                 </table>
                 <br>
-                <h2>Contro de Wii con extencion Nunchuk</h2>
+                <h3>Contro de Wii con extencion Nunchuk</h3>
                     <p>
                         Posicion correcta para juagar (Nesesario conectar el Nunchuk al puerto de entrada del control Wii).<br>
                         <img src="assets_3/Contol con Nunchuk.png" alt="Control de Wii con expansion Nunchuk">
                     </p>
                 <br>
                 <caption>PARTES Y FUNCIONAMINETO</caption>
-                <table border="1">
+                <table border="1" class="N">
                     <tr>
                         <th>Nombre</th>
                         <th>Funcionamiento</th>
@@ -797,14 +799,13 @@
                      Al igual que el Modo cazamonedas, este modo de juego se encuentra disponible en el menú principal, 
                      permitiendo enfrentamientos rápidos de 2 a 4 jugadores.
                     </p>
-                <h3>Imagen ilustrativa:</h3>
+                    <br>
                  <img src="assets_3/Eleccion de modos.png" alt="Imagen donde se puede seleccionar el modo cazamonedas o el modo conquista" width="600">
         </section> 
-    </main>
-    
+    </main>  
     <footer>
         <p>
-            Autor: Lautaro Gahn. <br>
+            Autor © 2026 Lautaro Gahn | Todos los derechos reservados. <br>
             Lugar donde se obtubo la informacion para la guia:<br>
             <a href="https://www-nintendo-com.translate.goog/en-gb/Games/Wii/New-Super-Mario-Bros-Wii-282376.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">Nintendo</a><br>
             <a href="https://www-mariowiki-com.translate.goog/New_Super_Mario_Bros._Wii?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">Super Mario Wiki</a> 
