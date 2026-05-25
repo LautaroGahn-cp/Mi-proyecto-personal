@@ -11,6 +11,8 @@ Esta pagina se trata sobre una pequeña guia al momento de jugar el videojuego N
 - Contiene imagenes que estan almasenadas en diferentes assets.
 - Contiene logo en todas las paginas.
 - Contiene URL externas donde se puede corroborar la informacion.
+- Mejors viculaes: Trancisiones, transfromaciones, background-color, box-shadow, hover, submenu oculto, centrado de (imagenes tablas y texto), responsividad de pagina (Tablet: max-width: 768px y Celular: max-width: 480px).
+- Utilizacion de fuente: Zen Maru Gothic
 
 ## Autor
 Lautaro Gahn
