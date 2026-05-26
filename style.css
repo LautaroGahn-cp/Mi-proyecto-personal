@@ -1,0 +1,769 @@
+:root {  /*creacion de variables se se utilizaran a lo largo del archivo.*/
+    --color_primario: #dddd89;
+    --color_secundario: #453b3b;
+    --color_terciario: #FF0000;
+    --color_cuaternario: #fff;
+    --color_quinario:#2d3c50;
+    --color-senario: #d9d962;
+    --veinte: 20px;
+    --quince: 15px;
+    --diez: 10px;
+    --cinco: 5px;
+}
+
+/*Funte que se utilizara en el archivo.*/
+@font-face {  
+  font-family: 'Zen Maru Gothic';
+  src: url('/fonts/ZenMaruGothic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  src: url('/fonts/ZenMaruGothic-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--color_primario);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);  /*sombreado de la caja del body.*/
+}
+
+.cabeza {
+    font-weight: 700;
+    padding: var(--diez);
+    margin: 1px;
+    border: var(--cinco);
+}
+
+.cabeza h1{
+    font-weight: 700;
+    padding: var(--diez);
+    margin: var(--cinco);
+    border: var(--cinco);
+    text-align: center;
+    background-color: var(--color_secundario);
+    border-radius: 10px;
+    color: var(--color_cuaternario);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu{
+    background-color: var(--color_terciario);  
+    padding: var(--diez);
+    border: var(--quince);
+    margin: var(--cinco);
+    border-radius: 25px;  /*redondeo de las esquinas de la caja.*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.menu ul{
+    list-style: none; /*Elimina las viñietas de la lista.*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex; /*Convierte el menú en un contenedor flexible y alinea todos los elementos <li> en una fila horizontal.*/
+    justify-content: center; /*Centra horizontalmente todo el menu en la caja.*/
+}
+
+.menu li{
+    margin: 0px 15px; /*Añade una separación de 15px a la izquierda y a la derecha de cada opcion y 0px de espacio arriba y abajo.*/
+    position: relative; /*Posición relativa, comúnmente se realiza esto por si se quiere crear un submenú desplegable.*/
+}
+
+.menu a{
+    color: white; /*Color del texto.*/
+    text-decoration: none; /*Elimina el subrayado azul del enlace.*/
+}
+
+.menu li:hover{ /*accion que se realizara a este elemento cuando se pase el cursor por encima.*/
+    background-color: darkred; /*Color de fondo que tendra la opcion una vez se pase el cursor por encima de su modelo de caja.*/
+}
+
+.menu li a:hover{
+    color: grey; /*Color del texto cuando el cursor pase por encima del mismo.*/
+}
+
+li .submenu_1 {
+    display: none; /*Oculta el submenu que se creo.*/
+    position: absolute; /*Desconecta el submenu del flujo normal de la página. Esto permite que flote debajo del elemento <li> (padre), gracias a que anteriormente se le había puesto position: relative a este ultimo.*/
+    background-color: var(--color_terciario);
+    padding: var(--diez);
+    margin: 0px;
+    border: var(--cinco);
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav li:hover .submenu_1 {
+    display: block; /*Cambia el estado de oculto, a visible.*/
+    border-radius: 20px; 
+}
+
+li .submenu_2{
+    display: none;
+    position: absolute; 
+    background-color: var(--color_terciario);
+    padding: var(--diez);
+    margin: 0px;
+    border: var(--cinco);
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav li:hover .submenu_2 {
+    display: block;
+    border-radius: 20px;
+}
+
+li .submenu_3{
+    display: none;
+    position: absolute;
+    background-color: var(--color_terciario);
+    padding: var(--diez);
+    margin: 0px;
+    border: var(--cinco);
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav li:hover .submenu_3 {
+    display: block;
+    border-radius: 20px;
+}
+
+.introduccion{
+    font-weight: 500px;
+    padding: var(--veinte);
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduccion h2{
+    background-color: var(--color_quinario);
+    color: var(--color_cuaternario);
+    border-radius: 5px;
+    text-align: center; /*Centra el texto en el centro de la patalla o en su contenedor.*/ 
+}
+
+.introduccion iframe{ /*Afecta al video.*/
+    margin-left: 250px; /*Margen fijo de la izquierda.*/
+}
+
+#Gameplay {
+    padding: var(--veinte);
+    margin: 1px;
+    border: 0px;
+    text-align: center;
+    border-bottom:1px solid #ddd; /*Dibuja una línea delgada y de color gris claro solo en la parte inferior, funcionando como un separador visual.*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#Gameplay h2{
+    font-weight: 700px;
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    text-align: center;
+    border-radius: var(--diez);
+}
+
+#Gameplay h3{
+    background-color: var(--color_quinario);
+    color: var(--color_cuaternario);
+    text-align: center;
+    border-radius: var(--cinco);
+}
+
+
+#Gameplay p{
+    margin: var(--cinco);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-senario);
+}
+
+#Desarrollo h4{
+    text-align: center;
+}
+
+#Divicion{
+    text-align: center;
+}
+
+#Divicion table{
+    width: 80%;
+    margin: 20px auto; 
+    border-collapse: collapse; /*Une los bordes en una sola línea limpia y delgada.*/
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+#Divicion tr{
+    border: 1px solid var(--color_quinario);
+    padding: 8px 12px;
+}
+
+#Divicion tr td:nth-child(even) { /*Es un selector que busca las celdas que ocupan posición par dentro de cada fila.*/
+    background-color: lightyellow;
+}
+
+#Personajes {
+    padding: var(--veinte);
+    margin: 1px;
+    border: 0;
+    font-weight: 500px;
+    border-bottom:1px solid #ddd;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Personajes h2 {
+    font-weight: 700px;
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    border-radius: var(--diez);
+    text-align: center;
+}
+
+#Personajes .T{
+    background-color: var(--color_quinario);
+    color: var(--color_cuaternario);
+    border-radius: var(--cinco);
+    text-align: center;
+}
+
+#Personajes ul{
+    display: flex; /*Esto hace que las tarjetas de los personajes se coloquen una al lado de la otra en forma de fila.*/
+    gap: 20px; /*Separa automaticamente las tarjetas a 20px.*/
+    padding: 20px;
+    flex-wrap: wrap; /*Evita que el diseño se rompa en pantallas chicas.*/
+}
+
+#Personajes ul li{
+    position: relative; /*Permite posicionar elementos internos de forma absoluta si lo necesitaras más adelante.*/ 
+    width: 500px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center; 
+    display: flex; /*Aplica Flexbox dentro de la tarjeta.*/
+    flex-direction: column; /*Direcciona el Flexbox a columna.*/
+    justify-content: space-between; /*Distribuye el contenido interno de forma que el primer elemento se pegue arriba y el último abajo, repartiendo el espacio sobrante en el medio.*/
+    background-color: black;
+    color: black;
+    transition: background-color 0.9s ease-in-out, box-shadow 0.9s ease-in-out; /*Es un temporizador, que en este cazo hace que el cambio en el color del fondo o en la sombra de la caja, no sea brusco, sino que tarde 0.9 segundos para que sea suave.*/
+}
+
+#Personajes ul li:hover{
+    background-color: white;
+    box-shadow: 0 10px 10px rgb(252, 252, 2);
+    cursor: pointer; /*Cambia el incono del "cursor" de la flecha a la "manito". */
+}
+
+ #Personajes ul li img{
+    width: 100%;
+}
+
+#Casas_y_objetos{
+    padding: var(--veinte);
+    font-weight: 500px;
+    border-bottom:1px solid #ddd;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#Casas_y_objetos h2{
+    font-weight: 700px;
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    border-radius: var(--diez);
+    text-align: center;
+}
+
+#Casas_y_objetos .T{
+    background-color: var(--color_quinario);
+    color: var(--color_cuaternario);
+    border-radius: var(--cinco);
+    text-align: center;
+}
+
+#Casas{
+    border-bottom: 1px solid #4d4747;
+}
+
+#Casas .t{
+    background-color: #c8c863;
+    margin-right: 1250px; /*Margen de la derecha.*/
+    padding: var(--cinco);
+}
+
+#Casas h4{
+    border-top: 1px solid #4d4747;
+    text-decoration: underline red; /*Hace un subrayado rojo*/
+}
+
+#Casas p, img{
+    margin: var(--cinco);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-senario);
+}
+
+#Objetos ul {
+    display: flex;
+    gap: 70px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+#Objetos ul li{
+    position: relative; 
+    width: 500px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    color: black; 
+    transition: transform 0.5s ease-in-out,  box-shadow 0.5s ease-in-out, border 0.4s ease-in-out; 
+}
+
+#Objetos ul li:hover{
+    transform: scale(1.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#Objetos ul li img{
+    width: 10%;
+}
+
+#Movimientos_y_controles{
+    padding: var(--veinte);
+    margin: 1px;
+    border: 0;
+    font-weight: 500px;
+    border-bottom:1px solid #ddd;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Movimientos_y_controles h2{
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    text-align: center;
+    border-radius: var(--diez);
+} 
+
+#Movimientos_y_controles h3{
+    background-color: var(--color_quinario);
+    color: var(--color_cuaternario);
+    text-align: center;
+    border-radius: var(--cinco);
+}
+
+#Movimientos ul{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#Movimientos ul li {
+    position: relative; 
+    width: 500px;
+    padding: 15px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color_primario);
+    color: black;
+    transition: box-shadow 0.s ease-in-out;
+}
+
+#Movimientos ul li:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+#Controles{
+    text-align: center;
+}
+
+#Contorles table {
+    width: 80%;
+    margin: 20px auto; 
+    border-collapse: collapse;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+#Controles .N{
+   margin-left: 90px;
+}
+
+#Controles tr{
+    border: 1px solid black;
+    padding: 8px 12px;
+}
+
+#Controles tr th:nth-child(even) {
+    background-color: lightyellow;
+}
+
+#Extras{
+    padding: var(--veinte);
+    font-weight: 500px;
+    border-bottom:1px solid #ddd;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+#Extras h2{
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    text-align: center;
+    border-radius: var(--diez);
+}
+
+#Extras h3{
+    background-color: var(--color_quinario);
+    color: var(--color_cuaternario);
+    text-align: center;
+    border-radius: var(--cinco);
+}
+
+#Extras p{
+    margin: var(--cinco);
+    background-color: var(--color-senario);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+footer{
+    background-color: var(--color_terciario); 
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-bottom: 0px;
+}
+
+footer p, a{
+    text-decoration: none;
+    color: var(--color_cuaternario);
+}
+
+footer a:hover{
+    color: var(--color_secundario);
+    cursor: pointer;
+}
+
+.contenedor {
+    display: grid; /*Comvierte el .contenedor en una grilla donde se van a acomodar las piezas de la pagina (header, nav, main, footer).*/
+    grid-template-areas:  /*Se dibuja un mapa visual de como estara hecha la pagina web*/
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 200px 1fr; /*Define el ancho de las columnas.*/
+    grid-template-rows: auto 1fr auto; /*Define el ancho de las filas.*/
+    height: 100vh; /*Hace que se ocupe el 100% de la altura de la pagina.*/
+    gap: var(--diez);
+    padding: var(--diez); 
+}
+
+.contenedor header{
+    grid-area: header; /*Ubica al elemento el la celda llamada 'header'.*/
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    padding: 15px;
+    font-size: 1.3em; /*Aumenta un 30% mas de lo normal*/
+    font-weight: 700px;
+    text-align: center;
+    border-radius: var(--diez);
+}
+
+.contenedor nav{
+    grid-area: nav; /*Ubica al elemento el la celda llamada 'nav'.*/
+    background-color: var(--color_terciario);
+    padding: var(--diez);
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    gap: var(--diez);
+    border-radius: var(--cinco);
+}
+
+.contenedor nav ul{
+    margin-left: 15px;
+    margin-top: 100px;
+    list-style: none;
+}
+
+.contenedor nav li{
+    margin: 0px 15px;
+    position: relative;
+}
+
+.contenedor nav li:hover{
+    background-color: darkred;
+    margin-right: 70px;
+    color: var(--color_secundario);
+}
+
+.contenedor main{
+    grid-area: main; /*Ubica al elemento el la celda llamada 'main'.*/
+    background-color: var(--color-senario);
+    padding: var(--diez);
+    display: grid; /*Comvierte al propio 'main' en un nuevo contenedor grid.*/
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); /*Crea una cuadricuala responsiva sin necesidad de ralizar medias queries.*/
+    gap: 20px;
+    align-content: start; /*Empuja todas las filas de la cuadrícula hacia la parte superior del contenedor.*/
+}
+
+.contenedor main h2{
+    background-color: var(--color_secundario);
+    color: var(--color_cuaternario);
+    margin-right: 300px;
+    margin-bottom: 250px;
+    text-align: center;
+    border-radius: var(--diez);
+}
+
+.contenedor main fieldset{
+    text-align: center;
+    margin-left: -200px;
+    margin-right: 200px;
+    border-color: var(--color_quinario);
+}
+
+.contenedor main .E, .L{
+    padding: var(--veinte);
+    margin-left: 50px;
+    border-radius: var(--veinte);
+}
+
+.contenedor main .E{ /*Boton enviar.*/
+    margin-top: 20px;
+    background-color: darkred;
+    color: var(--color_cuaternario);
+}
+
+.contenedor main .L{ /*Boton limpiar.*/
+    margin-top: 20px;
+    background-color: green;
+    color: var(--color_cuaternario);
+}
+
+.contenedor main .E:hover, .L:hover{
+    filter: saturate(500%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.contenedor footer{
+    grid-area: footer; /*Ubica al elemento el la celda llamada 'footer'.*/
+    background-color: var(--color_terciario);
+    text-align: center;
+    padding: var(--diez);
+    font-size: 0.9em;
+    color: var(--color_cuaternario);
+    border-radius: var(--cinco);
+}
+
+
+@media (max-width: 768px) { /*Media queries de 768 pixeles. Responsividad para tablets.*/
+
+    body {
+        box-shadow: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    li .submenu_1, li .submenu_2, li .submenu_3 {
+        display: none !important; /*"Elimana" los submenu cuando se usa la tablet*/
+    }
+
+    .introduccion iframe {
+        margin-left: 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    
+    #Personajes ul, #Movimientos ul, #Objetos ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #Personajes ul li, #Movimientos ul li, #Objetos ul li {
+        width: 90%;
+    }
+
+    #Divicion table, #Controles table {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #Controles .N {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #Casas .t {
+        margin-right: 0;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .contenedor nav ul{
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: unset;
+        height: auto;
+        flex: none;
+    }
+
+    .contenedor main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor main h2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contenedor main fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) { /*Media queries de 480 pixeles. Responsividad para celulares.*/
+
+    body {
+        box-shadow: none;
+    }
+
+    .cabeza h1 {
+        font-size: 1.2em;
+    }
+
+    .introduccion iframe {
+        height: 220px;
+    }
+
+
+    .menu {
+        padding: 5px;
+        border-width: 5px;
+    }
+    
+    li .submenu_1, li .submenu_2, li .submenu_3 {
+        display: none !important; /*"Elimana" los submenu cuando se usa la tablet*/
+    }
+
+    #Personajes ul li, #Movimientos ul li, #Objetos ul li {
+        width: 100%;
+    }
+
+    #Objetos ul li:hover{
+        transform: scale(1);
+        border: 1px solid black;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    #Divicion, #Controles {
+        overflow-x: auto;
+    }
+
+    #Controles .N {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+   .contenedor nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .contenedor nav ul{
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: unset;
+        height: auto;
+        flex: none;
+    }
+
+    .contenedor main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor main h2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contenedor main fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        width: 90%;
+    }
+}
