@@ -266,8 +266,14 @@ nav li:hover .submenu_3 {
     cursor: pointer; /*Cambia el incono del "cursor" de la flecha a la "manito". */
 }
 
- #Personajes ul li img{
+#Personajes ul li img {
     width: 100%;
+    opacity: 0;  /*Opacidad de la imagen*/
+    transition: opacity 0.9s ease-in-out;
+}
+
+#Personajes ul li:hover img {
+    opacity: 1;
 }
 
 #Casas_y_objetos{
