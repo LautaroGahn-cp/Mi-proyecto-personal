@@ -191,6 +191,66 @@ nav li:hover .submenu_3 {
     background-color: var(--color-senario);
 }
 
+/* ---- Buscador de niveles ---- */
+#Buscador_niveles {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--color_quinario);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#Buscador {
+    width: 60%;
+    padding: 10px 15px;
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 20px; /* Redondea las esquinas */
+    font-size: 1em;
+    outline: none; /* Elimina el contorno azul por defecto al hacer click */
+    background-color: var(--color_primario);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#Buscador:focus { /* Es el estilo que se aplica cuando el usuario hace click en el input del buscador */
+    background-color: var(--color_cuaternario);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+#Resultado_busqueda {
+    margin-top: 15px;
+    text-align: left; /* Los resultados se alinean a la izquierda */ 
+    display: inline-block; /* Permite centrar el bloque con text-align usandolo como padre */
+    width: 60%;
+}
+
+#Resultado_busqueda ul {
+    list-style: none; /* Elimina las viñetas de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+#Resultado_busqueda ul li {
+    background-color: var(--color_primario);
+    margin: 5px 0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#Resultado_busqueda ul li:hover {
+    background-color: var(--color_cuaternario);
+    cursor: default;
+}
+
+#Resultado_busqueda p { /* Estilo que tendra el mensaje "No se encontraron resultados" */
+    color: var(--color_terciario);
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: none;
+}
+
 #Desarrollo h4{
     text-align: center;
 }
@@ -450,6 +510,31 @@ nav li:hover .submenu_3 {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
+#Tips{
+    padding: var(--veinte);
+}
+
+#Tips button{
+    padding: var(--veinte);
+    background-color: black; 
+    color: black; 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 1em;
+    cursor: pointer;  /* Muestra la manito del cursor al pasar por el boton. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  /* Transición que se realizara con el hover. */
+}
+
+#Tips button:hover {
+    background-color: goldenrod; 
+    box-shadow: 0 6px 12px gold;
+}
+
+#Tips p{
+    margin-top: var(--quince);
+    display:none;
+}
 
 footer{
     background-color: var(--color_terciario); 
