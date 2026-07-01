@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <link rel="icon" href="assets_3/wii.png">
 </head>
 <body class="reseña">
@@ -17,24 +18,25 @@
         </nav>
         <main>
             <h2>Escribe un comentario.</h2>
-            <form action>
+            <form action id="Formulario_reseña">
                 <fieldset>
                     <legend>Comentario</legend>
                     <label for="Nombre">Nombre</label>
                     <br>
-                    <input type="text" placeholder="Ingrese Nombre">
+                    <input type="text" id="Campo_nombre"placeholder="Ingrese Nombre">
                     <br>
                     <label for="Correo">Correo Electronico</label>
                     <br>
-                    <input type="text" placeholder="Ingrese Correo">
+                    <input type="text" id="Campo_correo" placeholder="Ingrese Correo">
                     <br>
                     <label for="Reseña">Reseña</label>
                     <br>
-                    <textarea cols="30" rows="5" placeholder="Escriba aqui..." ></textarea><br>
+                    <textarea id="Campo_reseña" cols="30" rows="5" placeholder="Escriba aqui..." ></textarea><br>
                 </fieldset>
+                <p id="Mensaje_formulario"></p>
                 <input type="Submit" value="Enviar" class="E">
                     <br>
-                <input type="submit" value="Limpiar" class="L">
+                <input type="submit" value="Limpiar" class="L" id="Boton_limpiar">
                     <br>
             </form>
         </main>
