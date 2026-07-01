@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Videojuegos</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <link rel="icon" href="assets_3/wii.png">
 </head>
 <body>
@@ -100,6 +101,10 @@
             </article> 
             <article id="Divicion">
                 <h3>Divicion de los Mundos</h3>
+                <section id="Buscador_niveles">
+                    <input type="text" id="Buscador" placeholder="🔍 Buscador de Niveles">
+                    <div id="Resultado_busqueda"></div>
+                </section>
                 <caption>MUNDOS</caption>
                 <table border="1">
                     <tr>
@@ -800,7 +805,12 @@
                      permitiendo enfrentamientos rápidos de 2 a 4 jugadores.
                     </p>
                     <br>
-                 <img src="assets_3/Eleccion de modos.png" alt="Imagen donde se puede seleccionar el modo cazamonedas o el modo conquista" width="600">
+                <img src="assets_3/Eleccion de modos.png" alt="Imagen donde se puede seleccionar el modo cazamonedas o el modo conquista" width="600">
+            <section id="Tips">
+                <h3>💡 Tips del juego</h3>
+                <button id="Boton_tip">Mostrar tip</button>
+                <p id="Mostrar_tip"></p>
+            </section>        
         </section> 
     </main>  
     <footer>
